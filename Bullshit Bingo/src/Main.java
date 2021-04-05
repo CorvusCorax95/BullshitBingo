@@ -1,4 +1,5 @@
 import Ui.Ui;
+import Game.Game;
 
 public class Main {
 
@@ -9,6 +10,8 @@ public class Main {
 
         ui.initBoard();
 
+        Game game = new Game();
 
+        game.end_game();
     }
 }
