@@ -2,6 +2,7 @@ package Game;
 import Ui.Ui;
 
 import javax.swing.*;
+import java.awt.*;
 
 public class Game {
 
@@ -9,21 +10,21 @@ public class Game {
 
         boolean win = false;
         // i = Zeile
-        int i;
+        int i = 0;
         // j = Spalte
-        int j;
-        /*
+        int j = 0;
+
         // x o o o
         // x o o o
         // x o o o
         // x o o o
 
-        for (int j = 0; j < 5; j++)
+        for (j = 0; j < 4; j++)
         {
-                if (board[0][j] == green)
-                    & (board[1][j] == green)
-                    & (board[2][j] == green)
-                    & (board[3][j] == green)
+                if ((board[0][j].getBackground() == Color.GREEN)
+                    & (board[1][j].getBackground() == Color.GREEN)
+                    & (board[2][j].getBackground() == Color.GREEN)
+                    & (board[3][j].getBackground() == Color.GREEN))
                 {
                     win = true;
                 }
@@ -37,12 +38,12 @@ public class Game {
         // o o o o
         // o o o o
         // o o o o
-        for (int i = 0; i < 5; i++)
+        for (i = 0; i < 4; i++)
         {
-                if (board[i][0] == green)
-                    & (board[i][1] == green)
-                    & (board[i][2] == green)
-                    & (board[i][3] == green)
+                if ((board[i][0].getBackground() == Color.GREEN)
+                    & (board[i][1].getBackground() == Color.GREEN)
+                    & (board[i][2].getBackground() == Color.GREEN)
+                    & (board[i][3].getBackground() == Color.GREEN))
                 {
                     win = true;
                 }
@@ -55,7 +56,27 @@ public class Game {
         // o x o o
         // o o x o
         // o o o x
-*/
+
+        // o o o x
+        // o o x o
+        // o x o o
+        // x o o o
+    for (i = 0; i < 4; i++) {
+        if ((board[i][i].getBackground() == Color.GREEN) &
+                        (board[i][i].getBackground() == Color.GREEN) &
+                        (board[i][i].getBackground() == Color.GREEN) &
+                        (board[i][i].getBackground() == Color.GREEN))
+        {
+            win = true;
+        }
+        if ((board[3][0].getBackground() == Color.GREEN) &
+                (board[2][1].getBackground() == Color.GREEN) &
+                (board[1][2].getBackground() == Color.GREEN) &
+                (board[0][3].getBackground() == Color.GREEN))
+        {
+            win = true;
+        }
+    }
         return win;
     }
 }
