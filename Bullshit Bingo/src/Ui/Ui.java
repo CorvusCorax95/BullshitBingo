@@ -27,6 +27,10 @@ public class Ui implements MouseListener {
 
         this.mainFrame.setVisible(false);
         this.mainFrame.getContentPane().removeAll();
+
+        //using the nth entry of String array with possible options
+        int pcount = 0;
+
         for (int i = 0; i < Constants.LINES; i++) {
             for (int j = 0; j < Constants.COLUMNS; j++) {
                 board[i][j] = new JLabel();
@@ -34,13 +38,13 @@ public class Ui implements MouseListener {
                 board[i][j].setOpaque(true);
                 board[i][j].setBackground(Color.WHITE);
                 board[i][j].setBounds(j * 100 + 30, i * 100 + 20, 100, 100);
-                board[i][j].setText("place holder");
+                board[i][j].setText(Constants.bullshit[pcount]);
                 board[i][j].setHorizontalAlignment((SwingConstants.CENTER));
                 board[i][j].setVerticalAlignment((SwingConstants.CENTER));
                 board[i][j].addMouseListener(this);
 
                 mainFrame.getContentPane().add(board[i][j]);
-
+                pcount++;
             }
         }
         mainFrame.getContentPane().revalidate();
