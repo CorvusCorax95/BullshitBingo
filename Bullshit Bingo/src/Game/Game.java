@@ -1,10 +1,11 @@
 package Game;
+import Ui.Ui;
 
 import javax.swing.*;
 
 public class Game {
 
-    public boolean end_game(){
+    static public boolean end_game(JLabel[][] board){
 
         boolean win = false;
         // i = Zeile

@@ -11,7 +11,5 @@ public class Main {
         ui.initBoard();
 
         Game game = new Game();
-
-        game.end_game();
     }
 }
