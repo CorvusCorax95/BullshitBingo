@@ -77,6 +77,7 @@ public class Game {
             win = true;
         }
     }
+        System.out.println(win);
         return win;
     }
 }
