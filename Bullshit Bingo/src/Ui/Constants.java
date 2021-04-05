@@ -4,8 +4,8 @@ public class Constants {
 
     public static final int LINES = 4;
     public static final int COLUMNS = 4;
-    public static final int MAIN_WIDTH = 800;
-    public static final int MAIN_HEIGHT = 600;
+    public static final int MAIN_WIDTH = 500;
+    public static final int MAIN_HEIGHT = 500;
 
     public static final String[] bullshit={"Der heilige Gral der Bioinformatik", "Nächste Stunde werden wir...", "Ich bitte Sie Ihre Kamera " +
             "wieder einzuschalten.", "Ich möchte nicht über Ihre Köpfe hinweg reden", "Das ist essentiell", "Das ist trivial",

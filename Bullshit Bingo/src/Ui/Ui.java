@@ -31,9 +31,14 @@ public class Ui implements MouseListener {
             for (int j = 0; j < Constants.COLUMNS; j++) {
                 board[i][j] = new JLabel();
                 board[i][j].setName("board" + i + j);
-                board[i][j].setBounds(j * 100 + 50, i * 100, 100, 100);
+                board[i][j].setOpaque(true);
+                board[i][j].setBackground(Color.WHITE);
+                board[i][j].setBounds(j * 100 + 30, i * 100 + 20, 100, 100);
                 board[i][j].setText("place holder");
+                board[i][j].setHorizontalAlignment((SwingConstants.CENTER));
+                board[i][j].setVerticalAlignment((SwingConstants.CENTER));
                 board[i][j].addMouseListener(this);
+
                 mainFrame.getContentPane().add(board[i][j]);
 
             }
