@@ -25,6 +25,10 @@ public class Ui implements MouseListener {
 
     }
 
+    public JLabel[][] getBoard() {
+        return board;
+    }
+
     public void initBoard() {
 
         this.mainFrame.setVisible(false);
@@ -56,6 +60,8 @@ public class Ui implements MouseListener {
 
     }
 
+
+
     @Override
     public void mouseClicked(MouseEvent e) {
 
@@ -65,7 +71,6 @@ public class Ui implements MouseListener {
     @Override
     public void mousePressed(MouseEvent e) {
         e.getComponent().setBackground(Color.GREEN);
-        //game_end(board);
     }
 
     @Override
