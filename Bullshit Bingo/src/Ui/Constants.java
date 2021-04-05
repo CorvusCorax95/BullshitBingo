@@ -7,7 +7,7 @@ public class Constants {
     public static final int MAIN_WIDTH = 800;
     public static final int MAIN_HEIGHT = 600;
 
-    String[] bullshit={"Der heilige Gral der Bioinformatik", "Nächste Stunde werden wir...", "Ich bitte Sie Ihre Kamera " +
+    public static final String[] bullshit={"Der heilige Gral der Bioinformatik", "Nächste Stunde werden wir...", "Ich bitte Sie Ihre Kamera " +
             "wieder einzuschalten.", "Ich möchte nicht über Ihre Köpfe hinweg reden", "Das ist essentiell", "Das ist trivial",
             "Das möchte ich noch andiskutieren.", "Funktioniert die Technik noch?", "Wir wiederholen das nochmal ganz gemütlich.",
             "Ich räume noch ein bisschen auf.", "Ich möchte heute pünktlich Schluss machen", "Das ist einfachste Mathematik",
