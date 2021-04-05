@@ -4,14 +4,25 @@ public class Constants {
 
     public static final int LINES = 4;
     public static final int COLUMNS = 4;
-    public static final int MAIN_WIDTH = 500;
-    public static final int MAIN_HEIGHT = 500;
+    public static final int MAIN_WIDTH = 600;
+    public static final int MAIN_HEIGHT = 600;
 
-    public static final String[] bullshit={"Der heilige Gral der Bioinformatik", "Nächste Stunde werden wir...", "Ich bitte Sie Ihre Kamera " +
-            "wieder einzuschalten.", "Ich möchte nicht über Ihre Köpfe hinweg reden", "Das ist essentiell", "Das ist trivial",
-            "Das möchte ich noch andiskutieren.", "Funktioniert die Technik noch?", "Wir wiederholen das nochmal ganz gemütlich.",
-            "Ich räume noch ein bisschen auf.", "Ich möchte heute pünktlich Schluss machen", "Das ist einfachste Mathematik",
-            "Auch wenn Ihnen das tirival vorkommt, sagen sie einfach schnell die Antwort.", "Sie bekommen Ihre 10 Minuten Pause",
-            "Sehen Sie die Folie?", "Das ist für Sie Zuhause zum Nachlesen.", "Wo sind die, die MfI 3 gehört haben?"};
+    public static final String[] bullshit={"<html>Der heilige <br/> Gral der <br/> Bioinformatik <html>",
+            "<html> Nächste Stunde <br/> werden wir...<html>",
+            "<html> Ich bitte Sie <br/> Ihre Kamera wieder <br/> einzuschalten. <html>",
+            "<html> Ich möchte nicht <br/> über Ihre Köpfe <br/> hinweg reden <html>" ,
+            "<html> Das ist essentiell <html>",
+            "<html> Das ist trivial <html>",
+            "<html> Das möchte ich <br/> noch andiskutieren. <html>",
+            "<html> Funktioniert die <br/> Technik noch? <html>",
+            "<html> Wir wiederholen das <br/> nochmal ganz gemütlich. <html>",
+            "<html> Ich räume noch <br/> ein bisschen auf. <html>",
+            "<html> Ich möchte heute <br/> pünktlich Schluss <br/> machen <html>",
+            "<html> Das ist einfachste <br/> Mathematik <html>",
+            "<html> Auch wenn Ihnen <br/> das tirival vorkommt, sagen <br/> sie einfach <br/> schnell die Antwort. <html>",
+            "<html> Sie bekommen Ihre <br/> 10 Minuten Pause <html>",
+            "<html> Sehen Sie die Folie? <html>",
+            "<html> Das ist für Sie <br/> Zuhause zum Nachlesen. <html>",
+            "<html> Wo sind die, <br/> die MfI 3 gehört <br/> haben? <html>"};
 
 }

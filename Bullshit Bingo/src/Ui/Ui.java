@@ -4,6 +4,8 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
+import java.util.Arrays;
+import java.util.Collections;
 
 public class Ui implements MouseListener {
     private JPanel rootPane;
@@ -30,6 +32,7 @@ public class Ui implements MouseListener {
 
         //using the nth entry of String array with possible options
         int pcount = 0;
+        Collections.shuffle(Arrays.asList(Constants.bullshit));
 
         for (int i = 0; i < Constants.LINES; i++) {
             for (int j = 0; j < Constants.COLUMNS; j++) {
@@ -37,7 +40,7 @@ public class Ui implements MouseListener {
                 board[i][j].setName("board" + i + j);
                 board[i][j].setOpaque(true);
                 board[i][j].setBackground(Color.WHITE);
-                board[i][j].setBounds(j * 100 + 30, i * 100 + 20, 100, 100);
+                board[i][j].setBounds(j * 125 + 30, i * 125 + 30, 120, 120);
                 board[i][j].setText(Constants.bullshit[pcount]);
                 board[i][j].setHorizontalAlignment((SwingConstants.CENTER));
                 board[i][j].setVerticalAlignment((SwingConstants.CENTER));
@@ -56,13 +59,13 @@ public class Ui implements MouseListener {
     @Override
     public void mouseClicked(MouseEvent e) {
 
-        e.getComponent().setBackground(Color.GREEN);
 
     }
 
     @Override
     public void mousePressed(MouseEvent e) {
-
+        e.getComponent().setBackground(Color.GREEN);
+        //game_end(board);
     }
 
     @Override
