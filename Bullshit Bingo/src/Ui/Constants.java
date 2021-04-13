@@ -23,6 +23,10 @@ public class Constants {
             "<html> Sie bekommen Ihre <br/> 10 Minuten Pause <html>",
             "<html> Sehen Sie die Folie? <html>",
             "<html> Das ist für Sie <br/> Zuhause zum Nachlesen. <html>",
-            "<html> Wo sind die, <br/> die MfI 3 gehört <br/> haben? <html>"};
+            "<html> Wo sind die, <br/> die MfI 3 gehört <br/> haben? <html>",
+            "<html> Bioinformatik ist <br/> die beste aller <br/> Wissenschaften <html>",
+            "<html> Das ist nicht trivial <html>"
+
+    };
 
 }

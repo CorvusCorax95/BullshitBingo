@@ -61,23 +61,27 @@ public class Game {
         // o o x o
         // o x o o
         // x o o o
-    for (i = 0; i < 4; i++) {
-        if ((board[i][i].getBackground() == Color.GREEN) &
-                        (board[i][i].getBackground() == Color.GREEN) &
-                        (board[i][i].getBackground() == Color.GREEN) &
-                        (board[i][i].getBackground() == Color.GREEN))
-        {
-            win = true;
+
+        if ((board[0][0].getBackground() == Color.GREEN) &
+            (board[1][1].getBackground() == Color.GREEN) &
+            (board[2][2].getBackground() == Color.GREEN) &
+            (board[3][3].getBackground() == Color.GREEN)) {
+
+         win = true;
+
         }
-        if ((board[3][0].getBackground() == Color.GREEN) &
-                (board[2][1].getBackground() == Color.GREEN) &
-                (board[1][2].getBackground() == Color.GREEN) &
-                (board[0][3].getBackground() == Color.GREEN))
-        {
-            win = true;
-        }
+
+         if ((board[3][0].getBackground() == Color.GREEN) &
+            (board[2][1].getBackground() == Color.GREEN) &
+            (board[1][2].getBackground() == Color.GREEN) &
+            (board[0][3].getBackground() == Color.GREEN)) {
+
+             win = true;
+
+         }
+
+    System.out.println(win);
+    return win;
     }
-        System.out.println(win);
-        return win;
-    }
+
 }
