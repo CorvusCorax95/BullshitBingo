@@ -6,9 +6,19 @@ import java.awt.*;
 
 public class Game {
 
-    static public boolean end_game(JLabel[][] board){
+    static boolean endGame = false;
 
-        boolean win = false;
+    static public boolean isEndGame() {
+        return endGame;
+    }
+
+    static public void setEndGame(boolean endGame) {
+        endGame = endGame;
+    }
+
+    static public boolean end_round(JLabel[][] board){
+
+        boolean winRound = false;
         // i = Zeile
         int i = 0;
         // j = Spalte
@@ -26,11 +36,11 @@ public class Game {
                     & (board[2][j].getBackground() == Color.GREEN)
                     & (board[3][j].getBackground() == Color.GREEN))
                 {
-                    win = true;
+                    winRound = true;
                 }
                 else
                     {
-                        win = false;
+                        winRound = false;
                     }
         }
 
@@ -45,11 +55,11 @@ public class Game {
                     & (board[i][2].getBackground() == Color.GREEN)
                     & (board[i][3].getBackground() == Color.GREEN))
                 {
-                    win = true;
+                    winRound = true;
                 }
                 else
             {
-                win = false;
+                winRound = false;
             }
         }
         // x o o o
@@ -67,7 +77,7 @@ public class Game {
             (board[2][2].getBackground() == Color.GREEN) &
             (board[3][3].getBackground() == Color.GREEN)) {
 
-         win = true;
+         winRound = true;
 
         }
 
@@ -76,12 +86,12 @@ public class Game {
             (board[1][2].getBackground() == Color.GREEN) &
             (board[0][3].getBackground() == Color.GREEN)) {
 
-             win = true;
+             winRound = true;
 
          }
 
-    System.out.println(win);
-    return win;
+    System.out.println(winRound);
+    return winRound;
     }
 
 }

@@ -1,7 +1,8 @@
 import Ui.Ui;
 import Game.Game;
 
-import static Game.Game.end_game;
+import static Game.Game.end_round;
+import static Game.Game.isEndGame;
 
 public class Main {
 
@@ -14,15 +15,16 @@ public class Main {
 
         Game game = new Game();
 
-        while (!end_game(ui.getBoard())) {
+        while(! isEndGame()) {
+             while (!end_round(ui.getBoard())) {
 
-            try {
-                Thread.sleep(1000);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
+                 try {
+                     Thread.sleep(1000);
+                 } catch (InterruptedException e) {
+                     e.printStackTrace();
+                 }
+             }
         }
-
     }
 
 
