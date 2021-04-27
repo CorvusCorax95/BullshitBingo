@@ -25,8 +25,11 @@ public class Constants {
             "<html> Das ist für Sie <br/> Zuhause zum Nachlesen. <html>",
             "<html> Wo sind die, <br/> die MfI 3 gehört <br/> haben? <html>",
             "<html> Bioinformatik ist <br/> die beste aller <br/> Wissenschaften <html>",
+            "<html> Ich muss den  <br/> Bildschrim etwas <br/> zu mir ziehen. <html>",
+            "<html> Das können Sie <br/> online nachgucken. <html>",
+            "<html> Mir ist wichtig, <br/> dass Sie XYZ verstehen.  <html>",
+            "<html> Wir bewegen uns <br/> mit hoher Geschwindigkeit...  <html>",
             "<html> Das ist nicht trivial <html>"
-
     };
 
 }

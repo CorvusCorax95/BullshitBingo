@@ -78,7 +78,10 @@ public class Game {
             (board[3][3].getBackground() == Color.GREEN)) {
 
          winRound = true;
-
+        }
+        else
+        {
+            winRound = false;
         }
 
          if ((board[3][0].getBackground() == Color.GREEN) &
@@ -87,10 +90,12 @@ public class Game {
             (board[0][3].getBackground() == Color.GREEN)) {
 
              winRound = true;
-
+         }
+         else
+         {
+             winRound = false;
          }
 
-    System.out.println(winRound);
     return winRound;
     }
 
