@@ -1,7 +1,12 @@
 package Ui;
 
+/*
+* Here we save the Bullshit a professor can say.
+*/
+
 public class Constants {
 
+    // maximal size of board: 4x4
     public static final int LINES = 4;
     public static final int COLUMNS = 4;
     public static final int MAIN_WIDTH = 800;

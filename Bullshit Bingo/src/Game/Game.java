@@ -39,9 +39,9 @@ public class Game {
                     winRound = true;
                 }
                 else
-                    {
-                        winRound = false;
-                    }
+                {
+                    winRound = false;
+                }
         }
 
         // x x x x
